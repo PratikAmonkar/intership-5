@@ -6,7 +6,6 @@ import InfoDisplay from "../components/InfoDisplay";
 const HomeScreen = () => {
   const [currentWeather, setCurrentWeather] = useState("");
   const [isDataLoad, setIsDataLoad] = useState(false);
-  console.log(currentWeather);
 
   const getData = async () => {
     try {
@@ -48,7 +47,6 @@ const HomeScreen = () => {
               }}
             >
               <img src={locationImg} height="30px" />
-              {/* <p>Panaji</p> */}
 
               <p
                 style={{
@@ -127,156 +125,6 @@ const HomeScreen = () => {
               value={currentWeather.main.grnd_level}
               unit="hPa"
             />
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Min Temp:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.main.temp_min}°C
-              </p>
-            </div> */}
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Max Temp:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.main.temp_min}°C
-              </p>
-            </div> */}
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Pressure:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.main.pressure} hPa
-              </p>
-            </div> */}
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Humidity:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.main.humidity} %
-              </p>
-            </div> */}
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Sea level:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.main.sea_level} hPa
-              </p>
-            </div> */}
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Ground level:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.main.grnd_level} hPa
-              </p>
-            </div> */}
           </div>
 
           <div
@@ -306,81 +154,6 @@ const HomeScreen = () => {
               unit="meter/sec"
             />
 
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Wind speed:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.wind.speed} meter/sec
-              </p>
-            </div> */}
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Degree:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.wind.deg} degrees
-              </p>
-            </div> */}
-            {/* <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                Gust:
-              </p>
-              <p
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                {currentWeather.wind.gust} meter/sec
-              </p>
-            </div> */}
           </div>
         </div>
       ) : (
